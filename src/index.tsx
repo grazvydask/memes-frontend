@@ -27,7 +27,7 @@ function App() {
 
   async function fetchImage() {
   
-    setImage(await axios.get('http://localhost:3100/makememe')
+    setImage(await axios.get('https://memes-backend.herokuapp.com/')
       .then((response) => {
         const returnedData = response.data;
         return returnedData.image;
